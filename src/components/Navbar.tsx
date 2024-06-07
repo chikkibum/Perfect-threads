@@ -8,7 +8,7 @@ const Navbar = () => {
 
     let user = undefined
     let isAdmin = undefined
-
+// test
   return (
     <nav className='sticky z-[100] h-14 inset-x-0 top-0 w-full border-b border-gray-200 bg-white/75 backdrop-blur-lg transition-all'>
       <MaxWidthWrapper>
