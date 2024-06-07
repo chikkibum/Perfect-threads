@@ -1,27 +1,28 @@
+/* eslint-disable @next/next/no-img-element */
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import Image from "next/image";
 import { Check } from "lucide-react";
 import { Star } from "lucide-react";
-import { Phone } from "lucide-react";
-
+import Tshirt from "@/components/Tshirt";
 
 export default function Home() {
   return (
-    <div className="bg-slate-50">
-      <section>
-      <MaxWidthWrapper className="pb-24 pt-10 lg:grid-cols-3 
+    <div className="bg-slate-50 max-w-screen  max-h-screen overflow-auto">
+      <section className="lg:pr-20">
+      <MaxWidthWrapper className="pb-24 pt-10 lg:grid lg:grid-cols-3 
       sm:pb-32 lg:gap-x-0 xl:gap-x-8 lg:pt-24 xl:pt-32 lg:pv-52">
         <div className="col-span-2 px-6 lg:px-0 lg:pt-4">
         <div className= ' relative mx-auto text-center lg:text-left flex flex-col items-center lg:items-start'>
-          <div className="absolute w-28 left-0 -top-20 hidden lg:block">
+          <div className="absolute w-40 left-0 -top-20 hidden lg:block">
+          <div className='absolute inset-x-0 bottom-0 bg-gradient-to-t via-slate-50/50 from-slate-50 h-28' />
             <img src="/logo.png" alt="brandlogo" className="w-full" />
+            
           </div>
-          <h1 className="relative w-fit tracking-tight text-balance mt-16 font-bold
-           !leading-tight O text-gray-900 text-5x1 md:text-6xl lg:text-7xl  ">
-            Your Image is a <span className=" bg-orange-500 px-2 text-white "> Custom </span> Tshirt 
+          <h1 className="relative w-fit tracking-tight text-balance mt-16 font-bold font-customFont
+          !leading-tight text-gray-900 text-5xl md:text-6xl lg:text-7xl">
+            Your Image is a <span className=" bg-orange-500 px-2 text-white font-customFont "> Custom </span> Tshirt 
             </h1>
-          <p className="mt-6 text-lg text-gray-600 lg:pr-10 max-w-prose 
-          text-center lg:text-left text-balance md:text-wrap" >
+          <p className="mt-6 text-md text-gray-600 lg:pr-10 max-w-prose 
+          text-center lg:text-left text-pretty md:text-wrap " >
             Combine your favorite memories and turn them into a <span>Unique</span> t-shirt.
             Perfectthreads is the best place to get your custom t-shirt.
           </p>
@@ -92,14 +93,14 @@ export default function Home() {
           <div className='col-span-full lg:col-span-1 w-full flex justify-center px-8 sm:px-16 md:px-0 mt-32 lg:mx-0 lg:mt-20 h-fit'>
             <div className='relative md:max-w-xl'>
               <img
-                src='/your-image.png'
+                src='/your-image.png' alt="your-image"
                 className='absolute w-40 lg:w-52 left-56 -top-20 select-none hidden sm:block lg:hidden xl:block'
               />
               <img
-                src='/line.png'
-                className='absolute w-20 -left-6 -bottom-6 select-none'
+                src='/line.png' alt="line"
+                className='absolute w-20 left-6 -bottom-6 select-none'
               />
-              <Phone className='w-64' imgSrc='/testimonials/1.jpg' />
+              <Tshirt className='w-96' imgSrc='/testimonials/1.jpg' />
             </div>
           </div>
         </MaxWidthWrapper>
