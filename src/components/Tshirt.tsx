@@ -23,12 +23,12 @@ const Tshirt = ({className, imgSrc, dark = false, ...props}: TshirtProps) => {
             alt="Tshirt-template" 
             />
 
-            <div className="size-20 absolute mt-5 mr-2 z-10 right-36 top-28">
+          <div className="size-20 absolute mt-5 mr-2 z-10 right-36 top-28">
                 <img src={imgSrc} 
                 className="object-cover min-w-full min-h-full" 
                 alt="Tshirt image"
                  />
-            </div>
+          </div>
     </div>
   )
 }

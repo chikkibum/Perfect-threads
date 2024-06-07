@@ -12,19 +12,19 @@ export default function Home() {
       sm:pb-32 lg:gap-x-0 xl:gap-x-8 lg:pt-24 xl:pt-32 lg:pv-52">
         <div className="col-span-2 px-6 lg:px-0 lg:pt-4">
         <div className= ' relative mx-auto text-center lg:text-left flex flex-col items-center lg:items-start'>
-          <div className="absolute w-40 left-0 -top-20 hidden lg:block">
+          <div className="absolute w-36 -left-6 -top-12 hidden lg:block">
           <div className='absolute inset-x-0 bottom-0 bg-gradient-to-t via-slate-50/50 from-slate-50 h-28' />
-            <img src="/logo.png" alt="brandlogo" className="w-full" />
+            <img src="/logo-minimal.png" alt="brandlogo" className="w-full " />
             
           </div>
           <h1 className="relative w-fit tracking-tight text-balance mt-16 font-bold font-customFont
           !leading-tight text-gray-900 text-5xl md:text-6xl lg:text-7xl">
             Your Image is a <span className=" bg-orange-500 px-2 text-white font-customFont "> Custom </span> Tshirt 
             </h1>
-          <p className="mt-6 text-md text-gray-600 lg:pr-10 max-w-prose 
+          <p className="mt-6 text-md font-medium text-gray-600 lg:pr-10 max-w-prose 
           text-center lg:text-left text-pretty md:text-wrap " >
-            Combine your favorite memories and turn them into a <span>Unique</span> t-shirt.
-            Perfectthreads is the best place to get your custom t-shirt.
+            Combine your favorite memories and turn them into a <span className="font-bold">Unique</span> t-shirt.
+            PerfectThreads is the best place to get your custom t-shirt.
           </p>
           <ul className=" mt-6 space-y-2 text-left font-medium flex flex-col 
           items-center sm:items-start ">
