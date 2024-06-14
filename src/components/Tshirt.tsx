@@ -12,7 +12,7 @@ const Tshirt = ({ className, imgSrc, dark = false, ...props }: TshirtProps) => {
   return (
     <div
       className={cn(
-        "relative pointer-events-none z-50 overflow-hidden",
+        "relative pointer-events-none mt-12 lg:mt-2 z-50 overflow-hidden",
         className
       )}
       {...props}
