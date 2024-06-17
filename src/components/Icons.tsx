@@ -1,6 +1,13 @@
 import { LucideProps } from "lucide-react";
-
+/**
+ * Represents a SVG.
+ */
 export const Icons = {
+  /**
+   * Renders an underline icon.
+   * @param props - The props for the icon.
+   * @returns The SVG element representing the underline icon.
+   */
   Underline: (props: LucideProps) => (
     <svg
       {...props}
