@@ -3,7 +3,8 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Check } from "lucide-react";
 import { Star } from "lucide-react";
 import Tshirt from "@/components/Tshirt";
-import { Icons } from "@/components/icons";
+import { Icons } from "@/components/Icons";
+import Reviews from "@/components/Reviews";
 
 export default function Home() {
   return (
@@ -189,15 +190,16 @@ export default function Home() {
                 <Star className="h-5 w-5 text-orange-600 fill-orange-600" />
               </div>
               <div className="text-lg leading-8">
-                <p>
-                  "I'm really impressed with the quality of this customizable
-                  t-shirt. I've had it for over two months, and{" "}
+                <p className=" text-pretty">
+                  "I&apos;m really impressed with the quality of this
+                  customizable t-shirt. I&apos;ve had it for over two months,
+                  and{" "}
                   <span className="p-0.5 bg-slate-800 text-white">
                     the colors are still vibrant
                   </span>
-                  . Unlike other t-shirts I've owned, this one hasn't shown any
-                  signs of wear or fading. Plus, I've gotten several compliments
-                  on the unique design. Highly recommend it!"
+                  . Unlike other t-shirts I&apos;ve owned, this one hasn&apos;t
+                  shown any signs of wear or fading. Plus, I&apos;ve gotten
+                  several compliments on the unique design.
                 </p>
               </div>
               <div className="flex gap-4 mt-2">
@@ -217,6 +219,9 @@ export default function Home() {
             </div>
           </div>
         </MaxWidthWrapper>
+        <div>
+          <Reviews />
+        </div>
       </section>
     </div>
   );
