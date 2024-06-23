@@ -105,7 +105,7 @@ function Review({ imgSrc, className, ...props }: ReviewProps) {
       style={{ animationDelay }}
       {...props}
     >
-      {/* <Tshirt imgSrc={imgSrc} /> */}
+      {/* <Tshirt className="w-96" imgSrc={imgSrc} /> */}
       {/* this div is part of thsirt componetn but due to i can't pass classname without affecting other components i had to use it here */}
       <div
         className={cn(
@@ -143,7 +143,7 @@ function ReviewGrid() {
   return (
     <div
       ref={containerRef}
-      className="relative -mx-12 mt-16 grid h-[40rem] max-h-[150vh] grid-cols-1 items-start gap-12 overflow-hidden px-8 sm:mt-20 md:grid-cols-2 lg:grid-cols-3"
+      className="relative -mx-12 mt-16 grid h-[24rem] sm:h-[40rem] max-h-[150vh] grid-cols-1 items-start gap-12 overflow-hidden px-8 sm:mt-20 md:grid-cols-2 lg:grid-cols-3"
     >
       {isInView ? (
         <>
@@ -172,6 +172,8 @@ function ReviewGrid() {
           />
         </>
       ) : null}
+
+      {/* top and bottom gradient white colored for grid section */}
       <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-slate-100" />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-slate-100" />
     </div>

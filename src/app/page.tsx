@@ -1,10 +1,13 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import { Check } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 import { Star } from "lucide-react";
 import Tshirt from "@/components/Tshirt";
 import { Icons } from "@/components/Icons";
 import Reviews from "@/components/Reviews";
+import Link from "next/link";
+import { buttonVariants } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -222,6 +225,74 @@ export default function Home() {
         <div>
           <Reviews />
         </div>
+        <section>
+          <MaxWidthWrapper className="py-24">
+            <div className="mb-12 px-6 lg:px-8">
+              <div className="mx-auto max-w-2xl sm:text-center">
+                <h2 className="order-1 mt-1 tracking-tight text-center text-balance !leading-tight font-bold text-3xl md:text-5xl text-gray-900">
+                  Buy Amazing Tshirts at{""}
+                  <span className="relative px-2 bg-orange-500 texct-white">
+                    PerfectThreads{""}
+                  </span>
+                  {""} say
+                </h2>
+              </div>
+            </div>
+            <div
+              // style={{ backgroundColor: "#ff5e8c" }}
+              className=" rounded-xl bg-purple"
+            >
+              <div className="mx-auto max-w-6xl px-6 lg:px-8">
+                <div className="relative flex flex-col items-center md:grid grid-cols-2 gap-24">
+                  <img
+                    src="/arrow.png"
+                    className="absolute top-[25rem] md:top-1/2 -translate-y-1/2 z-10 left-1/2 -translate-x-1/2 rotate-90 md:rotate-0"
+                  />
+                  <div className="relative h-80 md:h-full md:scale-75 w-full md:justify-self-end max-w-sm rounded-xl bg-gray-900/5 ring-inset ring-gray-900/10 lg:rounded-2xl">
+                    <img
+                      src="/testimonials/1.jpg"
+                      className="rounded-md border-4 rounded-lg border-black object-cover hover:scale-105  transition-transform duration-500 ease-in-out h-full bg-white shadow-2xl ring-1 ring-gray-900/10 w-full"
+                    />
+                  </div>
+                  <div className="hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl">
+                    <Tshirt className="w-96 " imgSrc="/testimonials/1.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <ul className="mx-auto mt-12 max-w-prose sm:text-lg space-y-2 w-fit">
+              <li className="w-fit">
+                <Check className="h-5 w-5 text-orange-600 inline mr-1.5" />
+                High-quality Cotton material
+              </li>
+              <li className="w-fit">
+                <Check className="h-5 w-5 text-orange-600 inline mr-1.5" />
+                240 GSM great quality material
+              </li>
+              <li className="w-fit">
+                <Check className="h-5 w-5 text-orange-600 inline mr-1.5" />
+                Machine washable
+              </li>
+              <li className="w-fit">
+                <Check className="h-5 w-5 text-orange-600 inline mr-1.5" />5
+                year print warranty
+              </li>
+
+              <div className="flex justify-center">
+                <Link
+                  className={buttonVariants({
+                    size: "lg",
+                    className: "mx-auto mt-8",
+                  })}
+                  href="/configure/upload"
+                >
+                  Create your case now <ArrowRight className="h-4 w-4 ml-1.5" />
+                </Link>
+              </div>
+            </ul>
+          </MaxWidthWrapper>
+        </section>
       </section>
     </div>
   );
