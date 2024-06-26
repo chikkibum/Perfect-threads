@@ -2,6 +2,7 @@
 
 import React from "react";
 import MaxWidthWrapper from "../../components/MaxWidthWrapper"; // Adjust the import path as necessary
+import Link from "next/link";
 
 const TermsOfService = () => {
   return (
@@ -10,13 +11,17 @@ const TermsOfService = () => {
         <h1 className="text-3xl font-bold text-orange-500">
           Terms of Service🤞
         </h1>
+        <em> &quot; This is random information from chatgpt &quot;</em>
         <section className="mt-8">
           <h2 className="text-xl font-semibold ">1. Introduction</h2>
           <p className="mt-2 text-gray-700">
             Welcome to our website. By accessing and using this website, you
             agree to comply with and be bound by the following terms and
-            conditions of use, which together with our privacy policy govern our
-            relationship with you in relation to this website.
+            conditions of use, which together with our{" "}
+            <Link href="/privacyPolicy" className="text-orange-500 underline">
+              privacy policy
+            </Link>{" "}
+            govern our relationship with you in relation to this website.
           </p>
         </section>
         <section className="mt-8">
