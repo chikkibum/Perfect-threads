@@ -18,18 +18,18 @@ const Footer = () => {
             <div className="flex space-x-8">
               <Link
                 href="/Reviews"
-                className=" opacity-70 first-letter:text-sm *:text-muted-foreground hover:text-gray-600"
+                className=" opacity-70 first-letter:text-sm *:text-muted-foreground hover:text-gray-600 "
               >
                 Terms
               </Link>
               <Link
-                href="#"
+                href="/privacyPolicy"
                 className="text-sm opacity-70 text-muted-foreground hover:text-gray-600"
               >
                 Privacy Policy
               </Link>
               <Link
-                href="#"
+                href="/cookiePolicy"
                 className="text-sm opacity-70 text-muted-foreground hover:text-gray-600"
               >
                 Cookie Policy

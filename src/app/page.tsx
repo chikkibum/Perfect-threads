@@ -11,11 +11,11 @@ import { buttonVariants } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <div className="bg-slate-50 max-w-screen  max-h-screen overflow-auto">
+    <div className="bg-slate-50 grainy-light">
       <section className="lg:pr-20">
         <MaxWidthWrapper
           className="pb-20 pt-10 lg:grid lg:grid-cols-3 
-      sm:pb-20 lg:gap-x-0 xl:gap-x-8 lg:pt-24 xl:pt-32 lg:pb-40"
+      sm:pb-20 lg:gap-x-0 xl:gap-x-8 lg:pt-24 xl:pt-32 lg:pb-20"
         >
           <div className="col-span-2 px-6 lg:px-0 lg:pt-4">
             <div className=" relative mx-auto text-center lg:text-left flex flex-col items-center lg:items-start">
@@ -222,7 +222,7 @@ export default function Home() {
             </div>
           </div>
         </MaxWidthWrapper>
-        <div>
+        <div className="pt-4">
           <Reviews />
         </div>
         <section>
