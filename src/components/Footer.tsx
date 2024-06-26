@@ -17,7 +17,7 @@ const Footer = () => {
           <div className="flex items-center justify-center">
             <div className="flex space-x-8">
               <Link
-                href="#"
+                href="/Reviews"
                 className=" opacity-70 first-letter:text-sm *:text-muted-foreground hover:text-gray-600"
               >
                 Terms
