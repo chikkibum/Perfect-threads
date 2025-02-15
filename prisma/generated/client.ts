@@ -59,3 +59,23 @@ export type Account = Prisma.AccountModel
  * 
  */
 export type Verification = Prisma.VerificationModel
+/**
+ * Model Configuration
+ * 
+ */
+export type Configuration = Prisma.ConfigurationModel
+/**
+ * Model Order
+ * 
+ */
+export type Order = Prisma.OrderModel
+/**
+ * Model ShippingAddress
+ * 
+ */
+export type ShippingAddress = Prisma.ShippingAddressModel
+/**
+ * Model BillingAddress
+ * 
+ */
+export type BillingAddress = Prisma.BillingAddressModel

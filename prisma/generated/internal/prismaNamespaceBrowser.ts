@@ -54,7 +54,11 @@ export const ModelName = {
   User: 'User',
   Session: 'Session',
   Account: 'Account',
-  Verification: 'Verification'
+  Verification: 'Verification',
+  Configuration: 'Configuration',
+  Order: 'Order',
+  ShippingAddress: 'ShippingAddress',
+  BillingAddress: 'BillingAddress'
 } as const
 
 export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -63,12 +67,12 @@ export type ModelName = (typeof ModelName)[keyof typeof ModelName]
  * Enums
  */
 
-export const TransactionIsolationLevel = {
+export const TransactionIsolationLevel = runtime.makeStrictEnum({
   ReadUncommitted: 'ReadUncommitted',
   ReadCommitted: 'ReadCommitted',
   RepeatableRead: 'RepeatableRead',
   Serializable: 'Serializable'
-} as const
+} as const)
 
 export type TransactionIsolationLevel = (typeof TransactionIsolationLevel)[keyof typeof TransactionIsolationLevel]
 
@@ -129,6 +133,65 @@ export const VerificationScalarFieldEnum = {
 } as const
 
 export type VerificationScalarFieldEnum = (typeof VerificationScalarFieldEnum)[keyof typeof VerificationScalarFieldEnum]
+
+
+export const ConfigurationScalarFieldEnum = {
+  id: 'id',
+  width: 'width',
+  height: 'height',
+  imageUrl: 'imageUrl',
+  croppedImageUrl: 'croppedImageUrl',
+  size: 'size',
+  fit: 'fit',
+  color: 'color',
+  material: 'material'
+} as const
+
+export type ConfigurationScalarFieldEnum = (typeof ConfigurationScalarFieldEnum)[keyof typeof ConfigurationScalarFieldEnum]
+
+
+export const OrderScalarFieldEnum = {
+  id: 'id',
+  configurationId: 'configurationId',
+  userId: 'userId',
+  amount: 'amount',
+  isPaid: 'isPaid',
+  status: 'status',
+  shippingAddressId: 'shippingAddressId',
+  billingAddressId: 'billingAddressId',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+} as const
+
+export type OrderScalarFieldEnum = (typeof OrderScalarFieldEnum)[keyof typeof OrderScalarFieldEnum]
+
+
+export const ShippingAddressScalarFieldEnum = {
+  id: 'id',
+  name: 'name',
+  street: 'street',
+  city: 'city',
+  postalCode: 'postalCode',
+  country: 'country',
+  state: 'state',
+  phoneNumber: 'phoneNumber'
+} as const
+
+export type ShippingAddressScalarFieldEnum = (typeof ShippingAddressScalarFieldEnum)[keyof typeof ShippingAddressScalarFieldEnum]
+
+
+export const BillingAddressScalarFieldEnum = {
+  id: 'id',
+  name: 'name',
+  street: 'street',
+  city: 'city',
+  postalCode: 'postalCode',
+  country: 'country',
+  state: 'state',
+  phoneNumber: 'phoneNumber'
+} as const
+
+export type BillingAddressScalarFieldEnum = (typeof BillingAddressScalarFieldEnum)[keyof typeof BillingAddressScalarFieldEnum]
 
 
 export const SortOrder = {

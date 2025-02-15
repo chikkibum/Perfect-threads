@@ -9,7 +9,51 @@
 * 🟢 You can import this file directly.
 */
 
+export const OrderStatus = {
+  fulfilled: 'fulfilled',
+  shipped: 'shipped',
+  awaiting_shipment: 'awaiting_shipment'
+} as const
+
+export type OrderStatus = (typeof OrderStatus)[keyof typeof OrderStatus]
 
 
-// This file is empty because there are no enums in the schema.
-export {}
+export const ShirtSize = {
+  xs: 'xs',
+  s: 's',
+  m: 'm',
+  l: 'l',
+  xl: 'xl',
+  xxl: 'xxl'
+} as const
+
+export type ShirtSize = (typeof ShirtSize)[keyof typeof ShirtSize]
+
+
+export const ShirtFit = {
+  regular: 'regular',
+  oversized: 'oversized',
+  slim: 'slim'
+} as const
+
+export type ShirtFit = (typeof ShirtFit)[keyof typeof ShirtFit]
+
+
+export const FabricMaterial = {
+  cotton: 'cotton',
+  polycotton: 'polycotton',
+  dryfit: 'dryfit'
+} as const
+
+export type FabricMaterial = (typeof FabricMaterial)[keyof typeof FabricMaterial]
+
+
+export const ShirtColor = {
+  black: 'black',
+  white: 'white',
+  blue: 'blue',
+  red: 'red',
+  green: 'green'
+} as const
+
+export type ShirtColor = (typeof ShirtColor)[keyof typeof ShirtColor]
