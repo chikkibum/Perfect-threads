@@ -1,14 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import { HTMLAttributes } from "react";
 
 //
 interface TshirtProps extends HTMLAttributes<HTMLDivElement> {
   imgSrc: string;
   dark?: boolean;
+  width?: number;
+  height?: number;
 }
 
-const Tshirt = ({ className, imgSrc, dark = false, ...props }: TshirtProps) => {
+const Tshirt = ({ className, imgSrc, dark = false, width, height, ...props }: TshirtProps) => {
   return (
     <div
       className={cn(
@@ -23,12 +26,16 @@ const Tshirt = ({ className, imgSrc, dark = false, ...props }: TshirtProps) => {
         alt="Tshirt-template"
       />
 
-      <div className="size-20 absolute mt-5 mr-2 z-10 right-36 top-28">
-        <img
-          src={imgSrc}
-          className="object-cover min-w-full min-h-full"
-          alt="Tshirt image"
-        />
+      <div className="absolute inset-0 flex items-center justify-center z-10 p-8">
+        <div className="relative flex items-center overflow-clip justify-center" style={{ width: width ? `${width}px` : 'auto', height: height ? `${height}px` : 'auto' }}>
+          <Image
+            src={imgSrc}
+            className="object-cover object-center"
+            alt="Tshirt image"
+            width={width || 150}
+            height={height || 150}
+          />
+        </div>
       </div>
     </div>
   );
