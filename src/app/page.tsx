@@ -124,7 +124,7 @@ export default function Home() {
                 alt="line"
                 className="absolute w-20 left-6 -bottom-6 select-none"
               />
-              <Tshirt className="w-96" imgSrc="/testimonials/1.jpg" />
+              <Tshirt className="w-96" imgSrc="/naruto.png" width={150} height={150} />
             </div>
           </div>
         </MaxWidthWrapper>
@@ -251,11 +251,11 @@ export default function Home() {
                   <div className="relative h-80 md:h-full md:scale-75 w-full md:justify-self-end max-w-sm rounded-xl bg-gray-900/5 ring-inset ring-gray-900/10 lg:rounded-2xl">
                     <img
                       src="/testimonials/1.jpg"
-                      className="rounded-md border-4 rounded-lg border-black object-cover hover:scale-105  transition-transform duration-500 ease-in-out h-full bg-white shadow-2xl ring-1 ring-gray-900/10 w-full"
+                      className=" border-4 rounded-lg border-black object-cover hover:scale-105  transition-transform duration-500 ease-in-out h-full bg-white shadow-2xl ring-1 ring-gray-900/10 w-full"
                     />
                   </div>
                   <div className="hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl">
-                    <Tshirt className="w-96 " imgSrc="/testimonials/1.jpg" />
+                    <Tshirt className="w-96 " imgSrc="/doggy.png" />
                   </div>
                 </div>
               </div>
@@ -287,7 +287,7 @@ export default function Home() {
                   })}
                   href="/configure/upload"
                 >
-                  Create your case now <ArrowRight className="h-4 w-4 ml-1.5" />
+                  Create your favourit T-shirt now <ArrowRight className="h-4 w-4 ml-1.5" />
                 </Link>
               </div>
             </ul>
