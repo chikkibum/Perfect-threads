@@ -158,13 +158,13 @@ export default function Home() {
               </div>
               <div className="text-lg leading-8">
                 <p>
-                  "The t-shirt feels durable and I even got a compliment on the
+                  &quot;The t-shirt feels durable and I even got a compliment on the
                   design. Had the t-shirt for two and a half months now and{" "}
                   <span className="p-0.5 bg-slate-800 text-white">
                     the print is super clear
                   </span>
                   , on the t-shirt I had before, the print started fading and
-                  cracking after a couple weeks. Love it."
+                  cracking after a couple weeks. Love it.&quot;
                 </p>
               </div>
               <div className="flex gap-4 mt-2">
@@ -194,7 +194,7 @@ export default function Home() {
               </div>
               <div className="text-lg leading-8">
                 <p className=" text-pretty">
-                  "I&apos;m really impressed with the quality of this
+                  &quot;I&apos;m really impressed with the quality of this
                   customizable t-shirt. I&apos;ve had it for over two months,
                   and{" "}
                   <span className="p-0.5 bg-slate-800 text-white">
@@ -202,7 +202,7 @@ export default function Home() {
                   </span>
                   . Unlike other t-shirts I&apos;ve owned, this one hasn&apos;t
                   shown any signs of wear or fading. Plus, I&apos;ve gotten
-                  several compliments on the unique design.
+                  several compliments on the unique design.&quot;
                 </p>
               </div>
               <div className="flex gap-4 mt-2">

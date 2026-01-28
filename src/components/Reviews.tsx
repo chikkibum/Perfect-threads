@@ -2,7 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { HTMLAttributes, useEffect, useRef, useState } from "react";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import { cn } from "@/lib/utils";
 import { useInView } from "framer-motion";
@@ -69,8 +69,8 @@ function ReviewColumn({
       {reviews.concat(reviews).map((imgSrc, reviewIndex) => (
         <Review
           key={reviewIndex}
-          className={reviewClassName?.(reviewIndex % reviews.length)}
           imgSrc={imgSrc}
+          {...(reviewClassName && { className: reviewClassName(reviewIndex % reviews.length) })}
         />
       ))}
     </div>

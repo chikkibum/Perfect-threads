@@ -11,7 +11,7 @@ const TermsOfService = () => {
         <h1 className="text-3xl font-bold text-orange-500">
           Terms of Service🤞
         </h1>
-        <em> &quot; This is random information from chatgpt &quot;</em>
+        <em> &quot;This is random information from chatgpt&quot;</em>
         <section className="mt-8">
           <h2 className="text-xl font-semibold ">1. Introduction</h2>
           <p className="mt-2 text-gray-700">
@@ -29,7 +29,7 @@ const TermsOfService = () => {
           <p className="mt-2 text-gray-700">
             You agree to use the website only for lawful purposes and in a way
             that does not infringe the rights of, restrict or inhibit anyone
-            else's use and enjoyment of the website.
+            else&apos;s use and enjoyment of the website.
           </p>
         </section>
         <section className="mt-8">
@@ -53,7 +53,7 @@ const TermsOfService = () => {
           <h2 className="text-xl font-semibold">5. Contact Information</h2>
           <p className="mt-2 text-gray-700">
             If you have any questions about these Terms, please contact us at{" "}
-            <span className="font-2xl font-bold">perfectThreads@gmail.com</span>
+            <span className="font-2xl font-bold">perfectThreads@gmail.com</span>.
           </p>
         </section>
       </div>

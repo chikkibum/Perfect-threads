@@ -9,8 +9,7 @@ const CookiePolicy = () => {
       <div className="py-10 px-5">
         <h1 className="text-3xl font-bold text-orange-500">Cookie Policy🍪</h1>
         <em className="opacity-60">
-          {" "}
-          &quot; This is random information from chatgpt &quot;
+          &quot;This is random information from chatgpt&quot;
         </em>
         <section className="mt-8">
           <h2 className="text-xl font-semibold ">1. What Are Cookies</h2>
@@ -20,7 +19,7 @@ const CookiePolicy = () => {
             computer, to improve your experience. This page describes what
             information they gather, how we use it and why we sometimes need to
             store these cookies. We will also share how you can prevent these
-            cookies from being stored however this may downgrade or 'break'
+            cookies from being stored however this may downgrade or &apos;break&apos;
             certain elements of the sites functionality.
           </p>
         </section>
@@ -51,8 +50,8 @@ const CookiePolicy = () => {
           <h2 className="text-xl font-semibold ">4. More Information</h2>
           <p className="mt-2 text-gray-700">
             Hopefully that has clarified things for you and as was previously
-            mentioned if there is something that you aren't sure whether you
-            need or not it's usually safer to leave cookies enabled in case it
+            mentioned if there is something that you aren&apos;t sure whether you
+            need or not it&apos;s usually safer to leave cookies enabled in case it
             does interact with one of the features you use on our site. However
             if you are still looking for more information then you can contact
             us through one of our preferred contact methods.

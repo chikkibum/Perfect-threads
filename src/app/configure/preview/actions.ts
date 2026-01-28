@@ -19,9 +19,8 @@ export const createCheckoutSession = async ({
     throw new Error('No such configuration found')
   }
 
-  const { useSession } = authClient
-  const { data: session } = useSession()
-  const user = session?.user || null
+  const data = await authClient.getSession()
+  const user = data?.data?.user || null
 
   if (!user) {
     throw new Error('You need to be logged in')
